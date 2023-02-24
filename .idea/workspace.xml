@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="342f2e36-75c0-41c0-adb7-babdc5c6d127" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
@@ -123,7 +124,7 @@
       <workItem from="1676901538859" duration="27473000" />
       <workItem from="1677005018748" duration="9770000" />
       <workItem from="1677068523872" duration="10765000" />
-      <workItem from="1677170011369" duration="23947000" />
+      <workItem from="1677170011369" duration="24369000" />
     </task>
     <servers />
   </component>

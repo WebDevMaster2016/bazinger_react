@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7f1dc1b8.css",
+    "main.js": "/static/js/main.42e96042.js",
+    "static/js/787.01ca52a5.chunk.js": "/static/js/787.01ca52a5.chunk.js",
+    "static/media/lato-v23-latin-ext_latin-regular.woff": "/static/media/lato-v23-latin-ext_latin-regular.5043dea3053533cbf091.woff",
+    "static/media/lato-v23-latin-ext_latin-700.woff": "/static/media/lato-v23-latin-ext_latin-700.eef4724c8404e4108575.woff",
+    "static/media/lato-v23-latin-ext_latin-900.woff": "/static/media/lato-v23-latin-ext_latin-900.c8469f7af98b4cc5af0d.woff",
+    "static/media/lato-v23-latin-ext_latin-100.woff": "/static/media/lato-v23-latin-ext_latin-100.111de8b7cd92239b4c88.woff",
+    "static/media/lato-v23-latin-ext_latin-regular.woff2": "/static/media/lato-v23-latin-ext_latin-regular.57dc1083454b82f2577b.woff2",
+    "static/media/lato-v23-latin-ext_latin-700.woff2": "/static/media/lato-v23-latin-ext_latin-700.7719d053edcb13eab95f.woff2",
+    "static/media/lato-v23-latin-ext_latin-900.woff2": "/static/media/lato-v23-latin-ext_latin-900.e98f80f7918cf8b4a1c9.woff2",
+    "static/media/lato-v23-latin-ext_latin-100.woff2": "/static/media/lato-v23-latin-ext_latin-100.248f01e0b7ea2ab923f2.woff2",
+    "static/media/DroidSans-700.woff": "/static/media/DroidSans-700.8541c2902fc0692ecb0b.woff",
+    "static/media/DroidSans-400.woff": "/static/media/DroidSans-400.dff0d9f1d8975fd497af.woff",
+    "static/media/DroidSans-700.woff2": "/static/media/DroidSans-700.3409f232afdfb07a1b44.woff2",
+    "static/media/DroidSans-400.woff2": "/static/media/DroidSans-400.8ff074373079ae565972.woff2",
+    "index.html": "/index.html",
+    "main.7f1dc1b8.css.map": "/static/css/main.7f1dc1b8.css.map",
+    "main.42e96042.js.map": "/static/js/main.42e96042.js.map",
+    "787.01ca52a5.chunk.js.map": "/static/js/787.01ca52a5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7f1dc1b8.css",
+    "static/js/main.42e96042.js"
+  ]
+}
