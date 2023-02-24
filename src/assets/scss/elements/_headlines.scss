@@ -1,0 +1,37 @@
+.headline {
+  font-family: $base-font-family;
+  color: #ffffff;
+
+  &--lvl1 {
+    font-size: 42px;
+    font-weight: 100;
+    line-height: 1.2;
+    text-shadow: 0 1px 3px rgba(25, 22, 24, 0.36);
+
+    @include for-tablet-up {
+      font-size: 48px;
+    }
+  }
+  
+  &--lvl2 {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.2;
+    color: rgb(65, 64, 66);
+    
+    @include for-tablet-up {
+      font-size: 36px;
+    }
+  }
+  
+  &--lvl3 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: rgb(65, 64, 66);
+    
+    @include for-tablet-up {
+      font-size: 15px;
+    }
+  }
+}

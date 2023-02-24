@@ -1,0 +1,71 @@
+.button {
+  font-family: $base-font-family;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  height: 64px;
+  min-width: 195px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  transition: background-color 0.225s ease,
+              border-color 0.225s ease,
+              box-shadow 0.225s ease,
+              color 0.225s ease;
+  
+  &--blue {
+    color: #ffffff;
+    height: 60px;
+    border-color: $main-blue;
+    background-color: $main-blue;
+    box-shadow: 0 4px 0 #277697;
+  
+    @include hover-supported {
+      border-color: #3ea0cb;
+      background-color: #3ea0cb;
+    }
+  
+    &:active {
+      box-shadow: none;
+    }
+  }
+  
+  &--gray {
+    color: #72B3CC;
+    height: 60px;
+    border-color: #414042;
+    background-color: #414042;
+    box-shadow: 0 4px 0 #313032;
+    
+    @include hover-supported {
+      border-color: #363536;
+      background-color: #363536;
+    }
+    
+    &:active {
+      box-shadow: none;
+    }
+  }
+  
+  &--white-border {
+    color: #ffffff;
+    height: 64px;
+    border-color: #ffffff;
+    background-color: transparent;
+  
+    @include hover-supported {
+      color: #000000;
+      background-color: #ffffff;
+    }
+    
+    &:active {
+      background-color: #adadad;
+      border-color: #adadad;
+    }
+  }
+}

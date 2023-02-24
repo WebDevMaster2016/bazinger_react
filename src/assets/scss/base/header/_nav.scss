@@ -1,0 +1,125 @@
+.nav {
+  $_this: &;
+  
+  text-align: center;
+  position: fixed;
+  top: $header-height-mobile;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  overflow: auto;
+  background-color: transparent;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.225s ease;
+
+  @include for-tablet-up {
+    top: $header-height;
+  }
+
+  &.is-opened {
+    opacity: 1;
+    transform: translate(0, 0);
+    pointer-events: auto;
+    background-color: $transparent-black;
+  }
+
+  @include for-laptop-up {
+    position: initial;
+    padding: initial;
+    width: initial;
+    opacity: initial;
+    pointer-events: initial;
+    transition: initial;
+    overflow: initial;
+    box-shadow: initial;
+    margin-left: auto;
+    min-height: $header-height;
+  }
+
+  &__items {
+    @include for-laptop-up {
+      display: flex;
+      min-height: inherit;
+      align-items: center;
+    }
+  }
+
+  &__item {
+    margin-top: 8px;
+
+    @include for-laptop-up {
+      margin-top: 0;
+      position: relative;
+      min-height: inherit;
+      display: inherit;
+      align-items: inherit;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+    
+    &:last-child {
+  
+      #{$_this}__link {
+  
+        @include for-laptop-up {
+          padding-right: initial;
+  
+          &:before {
+            width: calc(100% - 20px);
+          }
+        }
+      }
+    }
+  }
+
+  &__link {
+    font-family: $secondary-font-family;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: block;
+    padding: 12px 20px;
+    transition: color 0.225s ease;
+
+    @include for-laptop-up {
+      line-height: initial;
+      display: flex;
+      align-items: center;
+      transition: color 0.225s ease;
+      
+      &:before {
+        content: '';
+        position: absolute;
+        left: 20px;
+        top: 0;
+        width: calc(100% - 40px);
+        height: 2px;
+        background-color: transparent;
+        transition: background-color .225s ease;
+      }
+    }
+  
+    &.is-active {
+      color: $main-blue;
+  
+      &:before {
+        background-color: $main-blue;
+      }
+    }
+
+    @include hover-supported {
+      color: $main-blue;
+    }
+
+    @include focus-visible;
+  }
+}

@@ -1,0 +1,49 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 999999;
+  min-height: $header-height-mobile;
+  background-color: rgba(7, 7, 7, .3);
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.2);
+  transition: background-color .225s ease;
+
+  &.is-scrolled {
+    background-color: $transparent-black;
+  }
+
+  @include for-tablet-up {
+    min-height: $header-height;
+  }
+
+  &__wrapper {
+    min-height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include for-tablet-up {
+      max-width: 672px;
+    }
+
+    @include for-laptop-up {
+      max-width: 1200px;
+    }
+  }
+
+  &__logo-link {
+    display: block;
+  }
+
+  &__logo-image {
+    display: block;
+  }
+
+  &__hamburger {
+    margin-right: -7px;
+    margin-left: 9px;
+
+    @include for-laptop-up {
+      display: none;
+    }
+  }
+}

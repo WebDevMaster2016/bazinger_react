@@ -1,0 +1,98 @@
+.hamburger {
+  $_this: &;
+
+  font-size: 0;
+  display: inline-block;
+  transition-timing-function: linear;
+  transition-duration: 0.15s;
+  transition-property: opacity, filter, background-color;
+  color: inherit;
+  background-color: transparent;
+
+  &__box {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 2px;
+    padding-right: 2px;
+    width: 46px;
+    height: $header-height-mobile;
+    pointer-events: none;
+
+    @include for-tablet-up {
+      height: $header-height;
+    }
+  }
+
+  &__inner {
+    top: 50%;
+    display: block;
+    margin-top: -1px;
+
+    &:after,
+    &:before {
+      display: block;
+      content: '';
+    }
+
+    &:after {
+      bottom: -6px;
+    }
+
+    &:before {
+      top: -6px;
+    }
+  }
+
+  &__inner,
+  &__inner:after,
+  &__inner:before {
+    position: absolute;
+    width: 16px;
+    height: 2px;
+    transition-timing-function: ease;
+    transition-duration: 0.15s;
+    transition-property: transform;
+    border-radius: 4px;
+    background-color: #ffffff;
+  }
+
+  &--spin {
+    #{$_this}__inner {
+      transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+      transition-duration: 0.22s;
+
+      &:before {
+        transition: top 0.1s ease-in 0.25s, opacity 0.1s ease-in;
+      }
+
+      &:after {
+        transition: bottom 0.1s ease-in 0.25s,
+          transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+      }
+    }
+
+    &.is-active {
+      #{$_this}__inner {
+        transition-delay: 0.12s;
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        transform: rotate(225deg);
+
+        &:before {
+          top: 0;
+          opacity: 0;
+          transition: top 0.1s ease-out, opacity 0.1s ease-out 0.12s;
+        }
+
+        &:after {
+          bottom: 0;
+          transform: rotate(-90deg);
+          transition: bottom 0.1s ease-out,
+            transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+        }
+      }
+    }
+  }
+}

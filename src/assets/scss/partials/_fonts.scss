@@ -1,0 +1,17 @@
+/* lato 100 */
+@include font-face(100, 100);
+
+/* lato regular */
+@include font-face(400, regular);
+
+/* lato 700 */
+@include font-face(700, 700);
+
+/* lato 900 */
+@include font-face(900, 900);
+
+/* droidsans 400 */
+@include font-face-droid(400, 400);
+
+/* droidsans 700 */
+@include font-face-droid(700, 700);
